@@ -1,0 +1,117 @@
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 1600px;
+}
+
+h3 {
+	padding-right: 45px;
+	color: aliceblue;
+}
+
+.banner {
+	height: 600px;
+	width: 100%;
+	background: url(../images/banner.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.banner-content {
+	z-index: 20;
+}
+
+.banner-overlay {
+	position: absolute;
+	top: 57px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(66, 67, 84, 0.5);
+	z-index: 10;
+	height: 600px;
+}
+
+p.quote {
+	text-align: center;
+	padding-right: 45px;
+	color: #fff;
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 40px;
+	padding-top: 5px;
+}
+
+.maincards {
+	text-align: center;
+	align-content: center;
+	padding-top: 100px;
+	background-color: rgba(66, 67, 84, 0.2);
+	height: 650px;
+}
+
+img.cardimages {
+	height: 150px;
+	max-width: 150px;
+	margin-left: 70px;
+	margin-top: 10px;
+
+}
+
+.card {
+	height: 400px;
+}
+
+p.cardtitle {
+	text-align: center;
+	color: black;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 25px;
+	padding-top: -35px;
+	padding-bottom: 20px;
+}
+
+
+.footer {
+	background: rgba(66, 67, 84, 0.8);
+	color: white;
+}
+
+.footer .links ul {
+	list-style-type: none;
+}
+
+.footer .links li a {
+	color: white;
+	transition: color 0.2s;
+}
+
+.footer .links li a:hover {
+	text-decoration: none;
+	color: #4180cb;
+}
+
+.footer .about-company i {
+	font-size: 25px;
+}
+
+.footer .about-company a {
+	color: white;
+	transition: color 0.2s;
+}
+
+.footer .about-company a:hover {
+	color: #4180cb;
+}
+
+.footer .location i {
+	font-size: 18px;
+}
+
+.footer .copyright p {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

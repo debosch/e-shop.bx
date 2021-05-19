@@ -1,0 +1,268 @@
+body{
+    background-color: #f8f9fa;
+}
+.btn-dark{
+    margin-top: 10px;
+    width: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140.62%;
+}
+
+.text3, ul{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.marg{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.sites{
+    margin-top: 90px;
+}
+
+input[type=text],input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+	border-radius: 5px;
+
+	padding: 20px;
+}
+
+.layer1 {
+	z-index: 1;
+}
+input[type=file] {
+	display: none;
+}
+
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+	padding: .5rem;
+}
+
+.preview-image {
+	position: relative;
+	margin-bottom: .5rem;
+	margin-right: .5rem;
+	overflow: hidden;
+}
+
+.preview-image.removing {
+	transform: scale(0);
+	transition: transform .1s;
+}
+
+.preview-image:hover .preview-remove {
+	opacity: 1;
+}
+
+.preview-image:hover .preview-info {
+	bottom: 0px;
+}
+
+.preview-image img {
+	width: 180px;
+	height: auto;
+}
+
+.preview-remove {
+	opacity: 0;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: opacity .22s;
+}
+
+.preview-info {
+	position: absolute;
+	right: 0;
+	bottom: -30px;
+	left: 0;
+	height: 25px;
+	font-size: 0.8rem;
+	background: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5px;
+	transition: bottom .22s;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #ffc107;
+}
+.addbtn {
+	color: #888;
+	font-weight: bold;
+	align-content: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.addbtn:hover {
+	color: #000;
+}
+
+.dropdown {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tagName {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	cursor: pointer;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 5px;
+	width: 100%;
+	color: #000;
+	border-radius: 50%;
+}
+
+.removeTag {
+	opacity: 0;
+	height: 20px;
+	position: absolute;
+	font-size: 20px;
+	right: 5px;
+	font-weight: bold;
+	/*background-color: rgba(255, 255, 255, .5);*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity .22s;
+}
+
+.appearedTags:hover .removeTag {
+	opacity: 1;
+}
+
+/* Нечётные параграфы */
+.appearedTags {
+	display: flex;
+	width: 26%;
+	height: 30px;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+.appearedTags.removing {
+	transform: scale(0);
+	transition: transform .1s;
+}
+
+.appearedTags:nth-child(2n+1) {
+	background-color: #e29af8;
+}
+
+.appearedTags:nth-child(2n) {
+	background-color: #84a9f8;
+}

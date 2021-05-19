@@ -1,0 +1,2 @@
+redirectToCatalogButtons();
+updateBasketCounter();

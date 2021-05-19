@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; frame-src team-a-2020; img-src 'self' data:; script-src 'self';"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set X-Frame-Options: DENY
+</IfModule>
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?$1 [L]
+
